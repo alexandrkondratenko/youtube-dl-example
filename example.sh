@@ -19,3 +19,6 @@ python3 youtube-dl/youtube_dl/__main__.py -F "$id"
 # Actually download and merge streams.
 # This is the main command line to use.
 python3 youtube-dl/youtube_dl/__main__.py -f bestvideo+bestaudio -o "downloads/%(id)s.%(ext)s" "$id"
+
+# To encode in mp4 format, use command line argument: --recode-video mp4
+python3 youtube-dl/youtube_dl/__main__.py -f bestvideo+bestaudio --recode-video mp4 -o "downloads/%(id)s.%(ext)s" "$id"
